@@ -1,0 +1,13 @@
+Install authentik from docker-compose.yml
+
+create an app as catch-all create outpost
+
+add middlewares to traefik
+
+add 
+      - "traefik.http.routers.traefik.middlewares=authentik@file"
+to authentik docker-compose.yml labels
+
+add 
+      - "traefik.http.routers.vaultwarden.middlewares=authentik@file"
+to app labels
