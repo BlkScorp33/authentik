@@ -9,5 +9,5 @@ add
 to authentik docker-compose.yml labels
 
 add 
-      - "traefik.http.routers.vaultwarden.middlewares=authentik@file"
+      - "traefik.http.routers.<app_name>.middlewares=authentik@file"
 to app labels
